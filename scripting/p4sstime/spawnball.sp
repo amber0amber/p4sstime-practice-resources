@@ -8,5 +8,6 @@ Action CSpawnBall(int client, int args) {
   TagChatAll("{warning}THE GAME IS {cRed}NOT {warning}STARTING!");
   bWaitingForBallSpawnToRestart = true;
   ServerCommand("mp_restartgame_immediate 1");
+  ServerCommand("tf_passtime_scores_per_round 100");
   return Plugin_Handled;
 }
