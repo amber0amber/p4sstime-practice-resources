@@ -629,9 +629,7 @@ public void OnPluginStart() {
   CCA("sm_team_name",  "sm_tn",      CTeamName,  "Rename your team");
   CCA("sm_save",       "sm_sv",      CSavepoint, "Save a spawn point");
   CCA("sm_load",       "sm_ld",      CLoadpoint, "Teleport to saved spawn");
-
-  // Admin commands
-  AC("sm_pt_spawnball",   CSpawnBall,        GENERIC, "Spawn the jack for pre-game practice.");
+  CCA("sm_pt_spawnball",       "sm_spb",      CSpawnBall, "Spawn the jack for pre-game practice.");
 
   // Admin commands with aliases
   ACA("sm_force_ready",    "sm_fr",   CForceReady,    GENERIC, "Set a team's ready status");
